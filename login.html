@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous">
+  </script>
+  <script defer type="module" src="js/loginCheck.js"></script>
+
+</head>
+<body class="page">
+  <div class="container registration__container">
+    <h1 class="registration__header">Авторизация пользователя</h1>
+    <form class="form" id="login-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+      <div class="user__text-wrapper">
+        <label for="email">Электронная почта</label>
+        <input required class="form__input" id="email" type="email" autocomplete="off">
+      </div>
+      <div class="user__text-wrapper">
+        <label for="password">Пароль</label>
+        <input required class="form__input" id="password" type="password" autocomplete="off">
+      </div>
+      <button type="submit" class="form__btn">Войти</button>
+      <a href="registration.html" class="form__btn">Зарегистироваться</a>
+    </form>
+  </div>
+</body>
+</html>

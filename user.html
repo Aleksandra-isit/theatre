@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous">
+  </script>
+  <script defer type="module" src="js/getUser.js"></script>
+
+</head>
+<body class="page">
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__wrapper">
+        <a href="index.html" id="mainPage" class="header__link">
+          <img src="img/ticket.png" alt="logo" width="26" height="26">
+          <p class="header__logo header__text">Театральная касса</p>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="user">
+      <div class="container user__container">
+        <div class="user__icon"></div>
+        <div class="user__data">
+          <div class="user__text-wrapper">
+            <label for="surname">Фамилия</label>
+            <span class="user__text" id="surname">1</span>
+          </div>
+          <div class="user__text-wrapper">
+            <label for="surname">Имя</label>
+            <span class="user__text" id="name">1</span>
+          </div>
+          <div class="user__text-wrapper">
+            <label for="surname">Электронная почта</label>
+            <span class="user__text" id="email">1@gmail.com</span>
+          </div>
+          <div class="user__text-wrapper">
+            <label for="surname">Номер телефона</label>
+            <span class="user__text" id="tel">+79204115689</span>
+          </div>
+        </div>
+        <a href="index.html" class="details__btn">Главный экран</a>
+        <a href="index.html" class="details__btn" id="exitBtn">Выход</a>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login</title>
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="page">
+  <div class="container">
+    <h2>Авторизация администратора</h2>
+    <form action="php/admin_login.php" method="post" class="form__admin">
+      <label for="username">Имя:</label>
+      <input class="form__input" type="text" id="username" name="username" required>
+      <label for="password">Пароль:</label>
+      <input class="form__input" type="password" id="password" name="password" required>
+      <button class="admin__link form__input" type="submit">Войти</button>
+    </form>
+  </div>
+</body>
+</html>

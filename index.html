@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Театральная касса</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous">
+  </script>
+  <script defer type="module" src="js/authoriz.js"></script>
+  <script defer type="module" src="js/getPerformances.js"></script>
+
+</head>
+<body class="page">
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__wrapper">
+        <a href="index.html" id="mainPage" class="header__link">
+          <img src="img/ticket.png" width="26" height="26" alt="">
+          <p class="header__logo header__text">Театральная касса</p>
+        </a>
+        <!-- <input type="text" class="header__search" placeholder="События, артисты и места"> -->
+        <a href="user.html" class="header__link" id="userAccount">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="info">
+      <div class="container info__container">
+        <h1 class="info__header">Репертуар театров в Санкт-Петербурге</h1>
+        <!-- <div class="info__filter">
+          <div class="info__filter-wrapper">
+            <label for="date" class="info__label">Дата</label>
+            <input type="date" name="date" class="info__input" id="date">
+          </div>
+          <div class="info__filter-wrapper">
+            <label for="gendre-select" class="info__label">Жанр</label>
+            <select name="gendre" class="info__input" id="gendre-select">
+              <option value="Не выбрано">Не выбрано</option>
+              <option value="Комедия">Комедия</option>
+              <option value="Мюзикл">Мюзикл</option>
+              <option value="Балет">Балет</option>
+              <option value="Драмма">Драмма</option>
+            </select>
+          </div>
+          <div class="info__filter-wrapper">
+            <label for="theatre-select" class="info__label">Театр</label>
+            <select name="theatre" class="info__input" id="theatre-select">
+              <option value="Не выбрано">Не выбрано</option>
+              <option value="Мариинский театр">Мариинский театр</option>
+              <option value="Александринский театр">Александринский театр</option>
+              <option value="Театр эстрады им. Аркадия Райкина">Театр эстрады им. Аркадия Райкина</option>
+            </select>
+          </div>
+        </div> -->
+        <div class="performances">
+          <ul class="performances__list">
+            <!-- <li class="performances item">
+              <a href="performance.html" class="perfornances__link">
+               <div class="card">
+                <img class="card__image" src="img/afisha.jpg" alt="Афиша">
+                <h2 class="card__title">Любовь по-французски</h2>
+                <span class="card__date">30 апреля</span>
+               </div>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

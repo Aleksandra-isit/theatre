@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous">
+  </script>
+  <script defer type="module" src="js/register.js"></script>
+
+</head>
+<body class="page">
+  <div class="container registration__container">
+    <h1 class="registration__header">Регистрация пользователя</h1>
+    <form class="form" method="post">
+      <div class="user__text-wrapper">
+        <label for="last_name">Фамилия</label>
+        <input autocomplete="off" required class="form__input" id="last_name" name="last_name" type="text">
+      </div>
+      <div class="user__text-wrapper">
+        <label for="first_name">Имя</label>
+        <input autocomplete="off" required class="form__input" id="first_name" name="first_name" type="text">
+      </div>
+      <div class="user__text-wrapper">
+        <label for="email">Электронная почта</label>
+        <input autocomplete="off" required class="form__input" id="email" name="email" type="email">
+      </div>
+      <div class="user__text-wrapper">
+        <label for="phone_number">Номер телефона</label>
+        <input autocomplete="off" required class="form__input" id="phone_number" name="phone_number" type="tel">
+      </div>
+      <div class="user__text-wrapper">
+        <label for="password">Пароль</label>
+        <input autocomplete="off" required class="form__input" id="password" name="password" type="password">
+      </div>
+      <button type="submit" class="form__btn">Зарегистрироваться</button>
+    </form>
+  </div>
+</body>
+</html>

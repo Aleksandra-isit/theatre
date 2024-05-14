@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Театральная касса</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous">
+  </script>
+  <script defer type="module" src="js/authoriz.js"></script>
+  <script defer type="module" src="js/getPerformanceDetails.js"></script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=48479146-1d32-4e52-9861-769f23bdc1be&lang=ru_RU"></script>
+  <!-- <script defer type="module" src="js/map.js"></script> -->
+  <script defer type="module" src="js/buyTicket.js"></script>
+
+</head>
+<body class="page">
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__wrapper">
+        <a href="index.html" id="mainPage" class="header__link">
+          <img src="img/ticket.png" width="26" height="26" alt="">
+          <p class="header__logo header__text">Театральная касса</p>
+        </a>
+        <a href="user.html" class="header__link" id="userAccount">
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main">
+    <div class="hero">
+      <div class="hero__wrapper">
+        <span class="hero__text" id="gendre"></span>
+        <h1 class="hero__title" id="title"></h1>
+        <span class="hero__text" id="start_date_time"></span>
+      </div>
+    </div>
+    <div class="details">
+      <div class="container details__container">
+          <div class="details__text-wrapper">
+              <p class="details__text" id="description"></p>
+
+              <p class="details__text">Длительность: <span id="duration"></span></p>
+              <p class="details__text">Доступно мест: <span id="available_seats"></span></p>
+              <p class="details__text">Цена билета: <span id="ticket_price"></span></p>
+
+              <p class="details__text">Контактная информация: <span id="contact_info"></span></p>
+
+            </div>
+          <button class="details__btn" id="buyTicket">Купить билет</button>
+          <p class="details__text">Театр: <span id="theatre_name"></span></p>
+          <p class="details__text">Адрес: <span id="addres"></span></p>
+
+          <div id="map" class="details__map" style="width: 600px; height: 400px"></div>
+
+      </div>
+   </div>
+  </main>
+
+</body>
+</html>
